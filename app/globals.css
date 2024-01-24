@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+h1 {
+  @apply text-9xl
+}
+
+h2 {
+  @apply text-7xl
+}

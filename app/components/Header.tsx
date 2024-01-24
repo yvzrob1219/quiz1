@@ -1,5 +1,6 @@
-
+'use client'
 import Link from "next/link"
+import { useState } from "react"
 
 const navlinks : {
   name: string,
@@ -24,8 +25,14 @@ const navlinks : {
 ]
 
 const Header = () => {
+
+  const [Appear, setAppear] = useState<boolean>(false)
+
   return (
-    <nav className={"absolute flex gap-10 min-h-10 align-middle items-center justify-center bg-zinc-700 w-full"}>
+    <nav
+      className={`
+      fixed flex gap-10 min-h-10 align-middle items-center justify-center bg-zinc-700 w-full
+    `}>
       {
         navlinks.map(({name, href}, index) => 
           <Link key={index} href={href}>{name}</Link>
