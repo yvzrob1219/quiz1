@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <nav
       className={`
-      fixed flex gap-10 min-h-10 align-middle items-center justify-center bg-zinc-700 w-full
+      fixed flex gap-10 min-h-10 align-middle items-center justify-center bg-zinc-200 dark:bg-zinc-700 w-full
     `}>
       {
         navlinks.map(({name, href}, index) => 
